@@ -1,0 +1,13 @@
+name: GitHub Importer Push Canary
+
+on:
+  push:
+
+permissions: {}
+
+jobs:
+  canary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inert marker only
+        run: printf '%s\n' 'GSM_IMPORTED_WORKFLOW_CANARY_20260909'
